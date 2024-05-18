@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap cdn link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+      <!-- header section starts -->
+
+<header class="fixed-top py-3">
+
+    <div class="container d-flex align-items-center justify-content-between">
+
+        <a href="#" class="logo">Flawless<span class="fas fa-hospital-user"></span></a>
+
+        <div id="menu-bar" class="fas fa-bars d-inline-block d-md-none"></div>
+
+        <nav class="nav">
+            <a href="/home">home</a>
+            <a href="#about">about</a>
+            <a href="#contact">contact us</a>
+            <a href="/FrontPage">Disease Detection</a>
+        </nav>
+
+    </div>
+
+</header>
+
+<!-- header section end-->
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="container">
+        
+
+        <div class="row min-vh-100 align-items-center pt-5">
+
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='images/Capture.PNG') }}" class="w-100" alt="">
+            </div>
+
+            <div class="col-md-6 content text-center text-md-start pl-md-5">
+                <span>your skin is your best accessory </span>
+                <h3>protect yourself from skin disease</h3>
+                <a href="https://my.clevelandclinic.org/health/articles/10978-skin" class="link-btn">learn more</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- home section ends -->
+<!-- home section starts  -->
+<section class="about" id="about">
+
+    <div class="container">
+
+        <div class="row align-items-center flex-wrap-reverse">
+
+            <div class="col-md-6 content">
+                <h3>What are Skin Diseases?</h3>
+                <p>Skin diseases are conditions that affect your skin. These diseases may cause rashes, inflammation, itchiness or other skin changes. Some skin conditions may be genetic, while lifestyle factors may cause others. Skin disease treatment may include medications, creams or ointments, or lifestyle changes.</p>
+                <a href="https://my.clevelandclinic.org/health/diseases/21573-skin-diseases#:~:text=Skin%20diseases%20are%20conditions%20that,or%20ointments%2C%20or%20lifestyle%20changes." class="link-btn">learn more</a>
+            </div>
+
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='images/m.png') }} " class="w-100" alt="">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+<!-- prevent section starts  -->
+
+<section class="prevent" id="prevent">
+
+    <h1 class="heading"> <span>Skin Diseases</span> </h1>
+
+    <div class="container">
+
+        <div class="d-flex flex-wrap justify-content-center">
+
+            <div class="box p-4 m-2">
+                <img src="{{ url_for('static', filename='images/acnei.PNG') }}" alt="">
+                <h3>Acne</h3>
+                <p>Acne is a skin condition that occurs when your hair follicles become plugged with oil and dead skin cells. It causes whiteheads, blackheads or pimples. Acne is most common among teenagers, though it affects people of all ages.</p>
+            </div>
+
+            <div class="box p-4 m-2">
+                <img src="{{ url_for('static', filename='images/melanoma.png') }}" alt="">
+                <h3>Melanoma</h3>
+                <p> Melanoma is the most serious type of skin cancer. It arises from the pigment-producing cells in your skin called melanocytes.Melanocytes are responsible for the color of your skin (melanin).</p>
+            </div>
+             <div class="box p-4 m-2">
+                <img src="{{ url_for('static', filename='images/hai.png') }}" alt="">
+                <h3>Hailey-Hailey disease</h3>
+                <p>  Hailey-Hailey disease, also known as familial benign chronic pemphigus, is a rare genetic skin disorder characterized by the development of painful, blistering lesions in areas of friction or skin folds.</p>
+            </div>
+            <div class="box p-4 m-2">
+                <img src="{{ url_for('static', filename='images/lichen.png') }}" alt="">
+                <h3>Lichen Planus </h3>
+                <p>
+Lichen planus is an autoimmune inflammatory condition that affects the skin, nails, scalp, hair, and mucous membranes . It causes an itchy rash that can develop anywhere on the body, but it most commonly appears on the wrists, forearms, ankles, lower back, and genitals.</p>
+            </div>
+            <div class="box p-4 m-2">
+                <img src="{{ url_for('static', filename='images/pso.png') }}" alt="">
+                <h3>Psoriasis</h3>
+                <p> Psoriasis is a chronic autoimmune condition that affects the skin. It causes the rapid buildup of skin cells, leading to thick, white, silvery, or red patches of skin. These patches can be itchy and painful and may occur anywhere on the body. </p>
+            </div>
+            <div class="box p-4 m-2">
+                <img src="{{ url_for('static', filename='images/prokto.png') }}" alt="">
+                <h3>Poroktoriasis</h3>
+                <p>Actinic porokeratosis is a type of porokeratosis, a group of skin disorders characterized by the development of small, raised bumps or lesions on the skin. Actinic porokeratosis specifically refers to lesions that are caused by excessive sun exposure.</p>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- prevent section ends -->
+
+<!-- check -->
+
+<
+<!-- check ends -->
+<!-- experts section starts  -->
+
+<section class="experts" id="experts">
+
+    <h1 class="heading"> meet our <span>Team</span> </h1>
+    
+        <div class="container">
+    
+            <div class="d-flex justify-content-center flex-wrap">
+    
+                <div class="box">
+                    <img src="{{ url_for('static', filename='images/42-420024_businessperson-computer-icons-woman-laborer-free-commercial-clip.png') }}" alt="">
+                    <h3>YETTOU Wafa </h3>
+
+                    <div class="share">
+                
+                        <a href="https://github.com/wafa-yet" class="fab fa-github"></a>
+                        <a href="https://www.linkedin.com/in/mahima-khatri-434a3b193/" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+
+    
+                <div class="box">
+                    <img src="{{ url_for('static', filename='images/42-420024_businessperson-computer-icons-woman-laborer-free-commercial-clip.png') }}" alt="">
+                    <h3>SAMET Omayma </h3>
+
+                    <div class="share">
+                        <a href="https://github.com/winee165" class="fab fa-github"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+    
+                
+    
+            </div>
+    
+        </div>
+    
+    </section>
+    
+    <!-- experts section ends -->
+    <!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span>contact</span> Us </h1>
+    
+        <div class="container">
+    
+            <div class="row flex-wrap-reverse">
+
+
+    
+                <div class="col-md-5 p-2">
+                              <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d12786.742489272301!2d3.044005595161675!3d36.75411645615983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smustapha%20bacha%20!5e0!3m2!1sen!2sdz!4v1716053836654!5m2!1sen!2sdz"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+    
+    <!-- contact section ends -->
+    
+  
+    
+    <!-- footer section starts  -->
+    
+    <section class="footer">
+    
+        <div class="container">
+    
+            <div class="d-flex flex-wrap justify-content-center text-center text-sm-start " >
+    
+                <div class="box p-3 m-2">
+                    <h3>Skin Care</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, vitae.</p>
+                </div>
+    
+
+    
+                <div class="box p-3 m-2">
+                    <h3>Connect with us</h3>
+                    <a href="https://web.facebook.com/lili.mestra.7"><i class="fab fa-facebook"></i>Facebook</a>
+                    <a href="https://www.instagram.com/oum_______aima/?next=%2F"><i class="fab fa-instagram"></i>Instagram</a>
+                    <a href="https://www.linkedin.com/in/wafa-yettou-3b801a2b3/"><i class="fab fa-linkedin"></i>LinkedIn</a>
+                    <a href="https://x.com/Wafawafayet23?t=hDXfZHEQFGMBvHhFtqrx7w&s=07"><i class="fab fa-twitter"></i>Twitter</a>
+                </div>
+    
+                <div class="box p-3 m-2">
+                    <h3>contact info</h3>
+                    <a href="#">+2130555654290</a>
+                    <a href="#">+2130698971261</a>
+                    <a href="#">wafaomaima@gmail.com</a>
+                    <a href="#">CHLEF-ALGERIEA</a>
+                </div>
+    
+            </div>
+        </div>
+    
+    </section>
+    
+    <!-- footer section ends -->
+    
+
+
+
+<!-- js file link  -->
+<script src="/static/js/main.js"></script>
+</body>
+</html>
